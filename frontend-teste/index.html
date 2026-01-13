@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>PIN — Chat NearbyMe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__avatar" aria-hidden="true">📍</div>
+        <div class="brand__text">
+          <div class="brand__title">PIN</div>
+          <div class="brand__subtitle">Seu guia do NearbyMe</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="clearBtn" class="btn btn--ghost" title="Limpar conversa">
+          Limpar
+        </button>
+      </div>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite" aria-label="Chat"></main>
+
+    <footer class="composer">
+      <div class="composer__box">
+        <textarea
+          id="messageInput"
+          class="composer__input"
+          placeholder="Pergunte algo ao PIN… (Enter envia, Shift+Enter quebra linha)"
+          rows="1"
+        ></textarea>
+
+        <button id="sendBtn" class="btn btn--primary" title="Enviar">
+          <span class="btn__icon">➤</span>
+        </button>
+      </div>
+
+      <div class="composer__hint">
+        Dica: peça “roteiro de 2h com café e vista” ou “roteiro dia a dia”.
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
